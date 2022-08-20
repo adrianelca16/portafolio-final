@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Adrian</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">EDUCACION</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/adrian.webp" alt="">
+            </div>
+            <h1>ADRIAN HERNANDEZ</h1>
+            <h2>Desarrollador Front-End</h2>
+            <div class="redes">
+                <a href="https://github.com/adrianelca16"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/adrian_veroes"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/adrian-hernandez-55115a228/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/adrian.elca15/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Adrian Hernandez.</span> Soy una persona responsable, muy creativa, me encanta trabajar
+                en grupo y adaptarme a mis demás compañeros de trabajo, estoy en constante aprendizaje, sé trabajar bajo
+                estrés y presión, sé encontrar la solución a los problemas que se presentan. surgir en el dia dia, ya
+                que tambien soy una persona muy activa y eficaz</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            10-07-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (+58) 424 133-32-86
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            adrian.elca15@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Miranda, Venezuela
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="./pdf/AdrianCurriculum.pdf" download="AdrianCurriculum.pdf">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React.JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node.JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Educacion</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>TSU en Analisis y Diseño de Sistemas</h4>
+                        <span class="casa">Unefa</span>
+                        <span class="fecha">2018-2021</span>
+                        <p>El Analista de Sistemas o el TSU en Análisis y Diseño de Sistemas planifica, elabora y
+                            coordina los procedimientos automáticos y manuales asociados a los sistemas. Define en
+                            combinación con la gerencia las necesidades de información de una organización
+                            administrativa, estudia la factibilidad técnico-económica de las alternativas que satisfacen
+                            estas necesidades. Evalúa el costo-efectividad de los recursos humanos, las máquinas y
+                            técnicas empleadas en estos sistemas.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Web Developers Full Stack</h4>
+                        <span class="casa">Academlo</span>
+                        <span class="fecha">2022 - En proceso</span>
+                        <p> el Full Stack Developer tiene la capacidad de trabajar en cualquier lugar, sin importar las
+                            dependencias. Hace uso de los stacks completos, y con el conocimiento necesario, puede poner
+                            en marcha en el back el mismo código que escribe en el front o en otro lugar.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Certificados</h3>
+                    <div class="item der">
+                        <h4>Fundamentos</h4>
+                        <span class="fecha">2022 - 2022</span>
+                        <img src="./img/fundamentos.png" alt="fundamentos" class="img">
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Weather.png" alt="">
+                    <div class="overlay">
+                        <h3>App del clima</h3>
+                        <a href="https://weatherappadrian.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-link"></i>Sitio Web</a>
+                        <a href="https://github.com/adrianelca16/Weather" target="_blank"><i
+                                class="fa-brands fa-github"></i>GitHub</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/RickAndMorty.png" alt="">
+                    <div class="overlay">
+                        <h3>Rick And Morty</h3>
+                        <a href="https://rickandmortyadrianhernandez.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-link"></i>Sitio Web</a>
+                        <a href="https://github.com/adrianelca16/Rick-And-Morty" target="_blank"><i
+                                class="fa-brands fa-github"></i>GitHub</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/usersApp.png" alt="">
+                    <div class="overlay">
+                        <h3>App de usuarios</h3>
+                        <a href="https://users-app-adrian.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-link"></i>Sitio Web</a>
+                        <a href="https://github.com/adrianelca16/users-api" target="_blank"><i
+                                class="fa-brands fa-github"></i>GitHub</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/pokedex.png" alt="">
+                    <div class="overlay">
+                        <h3>Pokedex</h3>
+                        <a href="https://pokeapi-adrian.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-link"></i>Sitio Web</a>
+                        <a href="https://github.com/adrianelca16/pokeapi" target="_blank"><i
+                                class="fa-brands fa-github"></i>GitHub</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ecommerce-React.png" alt="">
+                    <div class="overlay">
+                        <h3>Ecommerce</h3>
+                        <a href="https://react-adrian.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-link"></i>Sitio Web</a>
+                        <a href="https://github.com/adrianelca16/ecommerce-react" target="_blank"><i
+                                class="fa-brands fa-github"></i>GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form action="https://formspree.io/f/xbjbjnll" method="POST" class="col">
+                    <label>
+                        <input type="email" name="email" placeholder="Tu correo electronico">
+                    </label>
+                    <label>
+                        <textarea name="message" placeholder="Mensaje"></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay">
+                    </button>
+                </form>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/direccion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                La Coromoto, Guarenas
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 0424 133-32-86
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: adrian.elca15@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/adrianelca16"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/adrian_veroes"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/adrian-hernandez-55115a228/"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/adrian.elca15/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
